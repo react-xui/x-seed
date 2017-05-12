@@ -1,7 +1,7 @@
 {
   "name": "x-seed",
   "version": "0.0.0",
-  "description": "Accessible modal dialog component for React.JS",
+  "description": "React Plugin 开发插件的种子项目",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
@@ -13,7 +13,8 @@
     "example": "examples"
   },
   "scripts": {
-    "start":"node scripts/dev-examples",
+    "build": "node scripts/dev-examples",
+    "start":"node scripts/dev-src.js",
     "prepublish": "babel src -d lib"
   },
   "authors": [
@@ -30,13 +31,18 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-2": "^6.18.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "npm-run-all": "^3.1.2",
     "react": "^15.0.0",
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.0.0",
     "uglify-js": "2.4.24",
-    "webpack": "^1.12.14",
-    "webpack-dev-server": "1.11.0"
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.5.3",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "element-class": "^0.2.0",
