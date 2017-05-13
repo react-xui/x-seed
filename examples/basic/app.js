@@ -9,7 +9,7 @@ class App extends React.Component{
     this.state = {show:false};
   }
   testFunc(){
-    this.setState({show:true});
+    this.setState({show:!this.state.show});
   }
   render(){
     return  (

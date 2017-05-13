@@ -15,7 +15,8 @@
   "scripts": {
     "build": "node scripts/dev-examples",
     "start":"node scripts/dev-src.js",
-    "prepublish": "babel src -d lib"
+    "lib":"webpack --config webpack.dist.config.js",
+    "babel":"babel src -d lib"
   },
   "authors": [
     "tianxiangbing"

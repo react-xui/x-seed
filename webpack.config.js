@@ -34,7 +34,7 @@ module.exports = {
   },
   resolve: {
       modulesDirectories: modulesDirectories,
-      extensions: ['', '.js', '.jsx', 'css']
+      extensions: ['', '.js', '.jsx', '.css',".scss"]
   },
   module: {
     loaders: [

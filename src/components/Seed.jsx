@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Style from './_Seed.scss';
-
 
 export default class Seed extends Component {
   render () {
