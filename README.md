@@ -38,5 +38,15 @@ npm run-script prepublish
 ```
 此代码会在发布`npm`时自动执行。
 
+#发布至`npmjs`社区
+```bash
+$ npm adduser	
+Username: your name
+Password: your password
+Email: yourmail[@gmail](/user/gmail).com
+
+$ npm publish
+```
+
 ### 关于作者
 [https://github.com/tianxiangbing](https://github.com/tianxiangbing)
