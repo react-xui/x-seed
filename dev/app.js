@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Seed from '../src/index';
+import Style from '../src/_index';
 
 var appElement = document.getElementById('example');
 class App extends React.Component {
@@ -13,7 +14,10 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div><button onClick={this.testFunc.bind(this)}>测试方法</button>{this.state.show ? <Seed /> : undefined}</div>
+      <div>
+        <button onClick={this.testFunc.bind(this)}>测试方法</button>{this.state.show ? <Seed /> : undefined}
+        <button onClick={this.testFunc.bind(this)}>测试方法</button>{this.state.show ? <Seed /> : undefined}
+      </div>
     )
   }
 }

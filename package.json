@@ -13,10 +13,9 @@
     "example": "examples"
   },
   "scripts": {
-    "build": "node scripts/dev-examples",
-    "start":"node scripts/dev-src.js",
-    "lib":"webpack --config webpack.dist.config.js",
-    "babel":"babel src -d lib"
+    "example": "node scripts/dev-examples",
+    "start":"node scripts/dev-src",
+    "build":"babel src -d lib & webpack --config webpack.dist.config.js"
   },
   "authors": [
     "tianxiangbing"

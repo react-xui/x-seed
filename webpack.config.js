@@ -25,7 +25,7 @@ var extractCSS = new ExtractTextPlugin("[name].css");
 var modulesDirectories = ["web_modules", "node_modules", "bower_components","src"];
 module.exports = {
   entry: buildEntries(),
-
+  devtool :"source-map",
   output: {
     filename: "[name].js",
     chunkFilename: "[id].chunk.js",
@@ -50,13 +50,13 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /(node_modules|bower_components)/,
-        loader: extractCSS.extract('style-loader', 'css?!sass?includePaths[]=' + path.resolve(__dirname, 'src'))
+        loader: extractCSS.extract('style-loader', 'css?sourceMap!sass?sourceMap')
       },
       {
         test: /\.css$/,
         loader: extractCSS.extract(
           "style-loader",
-          "css?includePaths[]=" + path.resolve(__dirname, "src")
+          "css?sourceMap"
         )
       },
       {
@@ -69,5 +69,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [extractCSS, new webpack.optimize.CommonsChunkPlugin("shared.js")]
+  plugins: [extractCSS, new webpack.optimize.CommonsChunkPlugin("shared.js"),new webpack.optimize.DedupePlugin()]
 };

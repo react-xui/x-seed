@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Seed from '../../lib/index';
-
+import Style from '../../lib/index.css';
 var appElement = document.getElementById('example');
 class App extends React.Component{
   constructor(props){
@@ -13,7 +13,9 @@ class App extends React.Component{
   }
   render(){
     return  (
-    <div><button onClick={this.testFunc.bind(this)}>测试方法1</button>{this.state.show ? <Seed/> : undefined}</div>
+    <div>
+      <button onClick={this.testFunc.bind(this)}>测试方法1</button>{this.state.show ? <Seed/> : undefined}
+    </div>
     )
   }
 }

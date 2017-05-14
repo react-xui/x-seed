@@ -9,7 +9,7 @@ var modulesDirectories = ["web_modules", "node_modules", "bower_components","src
 module.exports = {
   entry:{app:['./src/_index.scss']},
   output: {
-    filename: "_index.css",
+    filename: "index.css",
     // chunkFilename: "index.chunk.js",
     path: "lib"
   },
@@ -45,5 +45,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [extractCSS]
+  plugins: [extractCSS,new webpack.optimize.DedupePlugin()]
 };
