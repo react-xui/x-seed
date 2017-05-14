@@ -38,7 +38,7 @@ npm run-script prepublish
 ```
 此代码会在发布`npm`时自动执行。
 
-#发布至`npmjs`社区
+# 发布至`npmjs`社区
 ```bash
 $ npm adduser	
 Username: your name
