@@ -1,6 +1,6 @@
 {
   "name": "x-seed",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React Plugin 开发插件的种子项目",
   "main": "./lib/index.js",
   "repository": {
@@ -15,7 +15,7 @@
   "scripts": {
     "example": "node scripts/dev-examples",
     "start":"node scripts/dev-src",
-    "build":"babel src -d lib & webpack --config webpack.dist.config.js"
+    "prepublish":"babel src -d lib & webpack --config webpack.dist.config.js"
   },
   "authors": [
     "tianxiangbing"
