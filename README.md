@@ -11,6 +11,12 @@ git clone --depth=1 https://github.com/ReactPlugin/x-seed.git x-组件名
 npm install 
 ```
 *需要注意的是，这里的webpack版本都不是最新的版本.*
+### 启动本地调试服务
+```bash
+npm start
+```
+执行该命令后，你可以通过`http://localhost:8090/`查看`dev`下的页面效果.
+
 组件的源代码存在于`src`目录下，`css`文件统一使用`sass`编写，如果需要使用`less`的需要配置`webpack`的配置文件,这里针对每一个文件目录作一下说明。
 ## 目录及文件结构
 *  `src`组件的源代码目录，里面的`index.jsx`是引用的`components`里的`Seed.jsx`（对应你的组件文件）,同理`_index.scss`引用`components`下的`_Seed.scss`（对应你的组件的样式）.
@@ -25,11 +31,6 @@ npm install
 npm run-script example
 ```
 执行该命令后，你可以通过`http://localhost:8080/`查看`example`下的页面效果.
-### 启动本地调试服务
-```bash
-npm start
-```
-执行该命令后，你可以通过`http://localhost:8090/`查看`dev`下的页面效果.
 
 *上面的两种服务都对应的`webpack.config.js`文件*
 ### 生成最终的组件代码
