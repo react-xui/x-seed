@@ -13,9 +13,19 @@
     "example": "examples"
   },
   "scripts": {
-    "example": "node scripts/dev-examples",
-    "start":"node scripts/dev-src",
-    "prepublish":"babel src -d lib & webpack --config webpack.dist.config.js"
+    "example": "npm-run-all prepublish exserver",
+    "exserver":"node scripts/dev-examples",
+    "start": "node scripts/dev-src",
+    "build":"webpack --config webpack.dist.config.js",
+    "lib":"babel src -d lib && webpack --config webpack.css.config.js",
+    "prepublish": "npm-run-all lib build",
+    "docs": "npm-run-all docs:*",
+    "doc-dev":"npm-run-all docs:clean docs:prepare docs:build:watch",
+    "docs:clean":"rimraf _book",
+    "docs:prepare": "gitbook install",
+    "docs:build": "gitbook build -g react-plugin/x-dialog",
+    "docs:build:watch": "gitbook serve",
+    "docs:publish": "cd _book && git init && git checkout -b gh-pages && git add --all && git commit -am \"update book\" && git push git@github.com:react-plugin/x-seed gh-pages --force"
   },
   "authors": [
     "tianxiangbing"
@@ -37,6 +47,8 @@
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.0.0",
     "uglify-js": "2.4.24",
+    "gitbook-cli": "^2.3.0",
+    "rimraf": "^2.6.1",
     "css-loader": "^0.23.1",
     "node-sass": "^3.5.3",
     "sass-loader": "^3.2.0",
