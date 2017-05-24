@@ -17,8 +17,8 @@ var reactDOMExternal = {
 module.exports = {
 
   entry: {
-    'x-dialog': './lib/index.js',
-    'x-dialog.min': './lib/index.js'
+    'x-seed': './lib/index.js',
+    'x-seed.min': './lib/index.js'
   },
 
   externals: {
