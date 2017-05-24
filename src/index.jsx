@@ -7,4 +7,4 @@
  * Contact: 55342775@qq.com
  */
 import Seed from './components/Seed';
-export default Seed;
+module.exports = Seed;  //使用module.exports时，从es6到es5生成的dist不会出现export.default的问题.
