@@ -39,6 +39,12 @@ npm run-script prepublish
 ```
 此代码会在发布`npm`时自动执行。
 
+# 发布gitbook静态站点
+```bash
+npm run-script docs
+```
+发布这个会在git上创建gh-pages分支，然后把_book下的文件提交至对应的github仓库。
+
 # 发布至`npmjs`社区
 ```bash
 $ npm adduser	
