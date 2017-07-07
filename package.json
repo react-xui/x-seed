@@ -57,12 +57,10 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "element-class": "^0.2.0",
-    "exenv": "1.2.0"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
+    "react": "^0.14.0 || ^15.6.1",
+    "react-dom": "^0.14.0 || ^15.6.1"
   },
   "tags": [
     "react",
