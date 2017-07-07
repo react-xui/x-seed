@@ -4,7 +4,7 @@ react组件开发规范
 创建组件的方式
 
 ```bash
-git clone --depth=1 https://github.com/ReactPlugin/x-seed.git x-组件名
+git clone --depth=1 https://github.com/React-Plugin/x-seed.git x-组件名
 ```
 安装npm依赖
 ```bash
