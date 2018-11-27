@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Seed from '../src/index';
-// import '../src/_index';
+import '../src/_index';
 
 var appElement = document.getElementById('example');
 class App extends React.Component {

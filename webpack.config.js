@@ -50,7 +50,7 @@ module.exports = {
       {
         test: /\.less$/,
         exclude: /(node_modules|bower_components)/,
-        loader: extractCSS.extract('style-loader', 'css?sourceMap!less?sourceMap')
+        loader: extractCSS.extract('style-loader', 'css?sourceMap!less')
       },
       {
         test: /\.css$/,
