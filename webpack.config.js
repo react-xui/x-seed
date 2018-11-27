@@ -34,7 +34,7 @@ module.exports = {
   },
   resolve: {
       modulesDirectories: modulesDirectories,
-      extensions: ['', '.js', '.jsx', '.css',".scss"]
+      extensions: ['', '.js', '.jsx', '.css',".less"]
   },
   module: {
     loaders: [
@@ -48,9 +48,9 @@ module.exports = {
         loader: "file-loader?name=[name].[ext]"
       },
       {
-        test: /\.scss$/,
+        test: /\.less$/,
         exclude: /(node_modules|bower_components)/,
-        loader: extractCSS.extract('style-loader', 'css?sourceMap!sass?sourceMap')
+        loader: extractCSS.extract('style-loader', 'css?sourceMap!less?sourceMap')
       },
       {
         test: /\.css$/,

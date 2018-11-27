@@ -1,6 +1,6 @@
 /*
  * Created with Visual Studio Code.
- * github: https://github.com/React-Plugin/x-seed
+ * github: https://github.com/React-xui/x-seed
  * User: 田想兵
  * Date: 2017-05-14
  * Time: 20:00:00
@@ -15,7 +15,7 @@ export default class Seed extends Component {
     console.log(123)
     return (
       <div className="Seed">
-        hello world...<a href="https://github.com/React-Plugin/x-seed">https://github.com/React-Plugin/x-seed</a>
+        hello world...<a href="https://github.com/React-xui/x-seed">https://github.com/React-xui/x-seed</a>
       </div>
     );
   }

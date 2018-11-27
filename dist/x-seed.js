@@ -126,7 +126,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	} /*
 	   * Created with Visual Studio Code.
-	   * github: https://github.com/React-Plugin/x-seed
+	   * github: https://github.com/React-xui/x-seed
 	   * User: 田想兵
 	   * Date: 2017-05-14
 	   * Time: 20:00:00
@@ -148,7 +148,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      console.log(123);
-	      return _react2.default.createElement('div', { className: 'Seed' }, 'hello world...', _react2.default.createElement('a', { href: 'https://github.com/React-Plugin/x-seed' }, 'https://github.com/React-Plugin/x-seed'));
+	      return _react2.default.createElement('div', { className: 'Seed' }, 'hello world...', _react2.default.createElement('a', { href: 'https://github.com/React-xui/x-seed' }, 'https://github.com/React-xui/x-seed'));
 	    }
 	  }]);
 

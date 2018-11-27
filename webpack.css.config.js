@@ -7,7 +7,7 @@ var EXAMPLES_DIR = path.resolve(__dirname, "examples");
 var extractCSS = new ExtractTextPlugin("index.css");
 var modulesDirectories = ["web_modules", "node_modules", "bower_components","src"];
 module.exports = {
-  entry:{app:['./src/_index.scss']},
+  entry:{app:['./src/_index.less']},
   output: {
     filename: "index.css",
     // chunkFilename: "index.chunk.js",
@@ -15,7 +15,7 @@ module.exports = {
   },
   resolve: {
       modulesDirectories: modulesDirectories,
-      extensions: ['', '.js', '.jsx', '.css','.scss']
+      extensions: ['', '.js', '.jsx', '.css','.less']
   },
   module: {
     loaders: [
@@ -24,9 +24,9 @@ module.exports = {
         loader: "file-loader?name=[name].[ext]"
       },
       {
-        test: /\.scss$/,
+        test: /\.less$/,
         exclude: /(node_modules|bower_components)/,
-        loader: extractCSS.extract('style-loader', 'css?!sass?&includePaths[]=' + path.resolve(__dirname, 'src'))
+        loader: extractCSS.extract('style-loader', 'css?!less?&includePaths[]=' + path.resolve(__dirname, 'src'))
       },
       {
         test: /\.css$/,

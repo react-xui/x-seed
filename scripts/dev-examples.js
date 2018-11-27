@@ -5,4 +5,6 @@ console.log(config.entry);
 // config.entry.app.unshift("webpack-dev-server/client?http://localhost:8080/");
 var compiler = webpack(config);
 var server = new WebpackDevServer(compiler, {contentBase:'examples'});
-server.listen(8080);
+server.listen(8080,'127.0.0.1',()=>{
+    console.log('http://localhost:8080/')
+});

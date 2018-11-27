@@ -1,27 +1,27 @@
 {
   "name": "x-seed",
-  "version": "0.0.2",
-  "description": "React Plugin 开发插件的种子项目",
+  "version": "0.0.3",
+  "description": "React xui 开发插件的种子项目",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/React-Plugin/x-seed.git"
+    "url": "https://github.com/React-xui/x-seed.git"
   },
-  "homepage": "https://github.com/React-Plugin/x-seed",
-  "bugs": "https://github.com/React-Plugin/x-seed/issues",
+  "homepage": "https://github.com/React-xui/x-seed",
+  "bugs": "https://github.com/React-xui/x-seed/issues",
   "directories": {
     "example": "examples"
   },
   "scripts": {
     "example": "npm-run-all prepublish exserver",
-    "exserver":"node scripts/dev-examples",
+    "exserver": "node scripts/dev-examples",
     "start": "node scripts/dev-src",
-    "build":"webpack --config webpack.dist.config.js",
-    "lib":"babel src -d lib && webpack --config webpack.css.config.js",
+    "build": "webpack --config webpack.dist.config.js",
+    "lib": "babel src -d lib && webpack --config webpack.css.config.js",
     "prepublish": "npm-run-all lib build",
     "docs": "npm-run-all docs:*",
-    "doc-dev":"npm-run-all docs:clean docs:prepare docs:build:watch",
-    "docs:clean":"rimraf _book",
+    "doc-dev": "npm-run-all docs:clean docs:prepare docs:build:watch",
+    "docs:clean": "rimraf _book",
     "docs:prepare": "gitbook install",
     "docs:build": "gitbook build -g react-plugin/x-dialog",
     "docs:build:watch": "gitbook serve",
@@ -41,23 +41,21 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-2": "^6.18.0",
+    "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "gitbook-cli": "^2.3.0",
+    "less": "^3.8.1",
     "npm-run-all": "^3.1.2",
     "react": "^15.0.0",
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.0.0",
-    "uglify-js": "2.4.24",
-    "gitbook-cli": "^2.3.0",
     "rimraf": "^2.6.1",
-    "css-loader": "^0.23.1",
-    "node-sass": "^3.5.3",
-    "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
+    "uglify-js": "2.4.24",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^0.14.0 || ^15.6.1",
     "react-dom": "^0.14.0 || ^15.6.1"
