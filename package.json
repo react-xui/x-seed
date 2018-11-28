@@ -1,14 +1,14 @@
 {
   "name": "x-seed",
-  "version": "0.0.3",
-  "description": "React xui 开发插件的种子项目",
+  "version": "0.0.4",
+  "description": "react xui 开发插件的种子项目",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/React-xui/x-seed.git"
+    "url": "https://github.com/react-xui/x-seed.git"
   },
-  "homepage": "https://github.com/React-xui/x-seed",
-  "bugs": "https://github.com/React-xui/x-seed/issues",
+  "homepage": "https://github.com/react-xui/x-seed",
+  "bugs": "https://github.com/react-xui/x-seed/issues",
   "directories": {
     "example": "examples"
   },
@@ -51,7 +51,7 @@
     "react-dom": "^15.0.0",
     "rimraf": "^2.6.1",
     "style-loader": "^0.13.1",
-    "uglify-js": "2.4.24",
+    "uglify-js": "^2.6.0",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   },
