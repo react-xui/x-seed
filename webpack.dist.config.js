@@ -32,7 +32,7 @@ module.exports = {
     path: 'dist',
     publicPath: '/',
     libraryTarget: 'umd',
-    library: 'Dialog'
+    library: 'Seed'
   },
 
   plugins: [

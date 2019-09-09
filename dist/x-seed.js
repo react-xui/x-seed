@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["react", "react-dom"], factory);
 	else if(typeof exports === 'object')
-		exports["Dialog"] = factory(require("react"), require("react-dom"));
+		exports["Seed"] = factory(require("react"), require("react-dom"));
 	else
-		root["Dialog"] = factory(root["React"], root["ReactDOM"]);
+		root["Seed"] = factory(root["React"], root["ReactDOM"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_3__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
